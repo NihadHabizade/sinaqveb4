@@ -1,0 +1,201 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.hidden{
+  opacity: 1;
+}
+
+body{
+  font-family: Arial;
+}
+
+.header{
+  position: fixed;
+  width: 100%;
+  height: 63px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  top:0;
+  left:0;
+}
+
+.home-icon{
+  margin-left: 15px;
+}
+
+.menu-icon{
+  padding-right: 15px;
+}
+
+.header a{
+  text-decoration: none;
+  color: white;
+}
+
+.p-about{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-top: 63px;
+  width: 100%;
+}
+
+.p-about-background{
+  box-sizing: border-box;
+  position: absolute;
+  background-color: black;
+  width: 100vw;
+  height: 285px;
+  z-index: -1;
+}
+
+.p-about-img{
+  width: 176px;
+  height: 314px;
+  margin-top: 9px;
+  margin-left: 7px;
+  flex: 1;
+}
+
+.p-about-text{
+  display: inline-block;
+}
+
+.p-about-welcome{
+  color: white;
+  justify-tracks: center;
+  text-align: center;
+  font-family: "Roboto Slab";
+  font-style: 600;
+  font-size: 17px;
+  flex: 1;
+}
+
+.p-about-welcome > p{
+  position: absolute;
+  display: block;
+  opacity: 0;
+  will-change: opacity;
+  border: red solid 5px;
+} 
+
+.p-about-welcome-1{
+  animation: fadeInOut 2s;
+  animation-fill-mode: forwards;
+}
+
+.p-about-welcome-2{
+  animation: fadeInOut 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  text-align: center;
+}
+
+.p-about-welcome-3{
+  animation: fadeInOut 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.p-about-welcome-4{
+  animation: fadeInOut 1s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+.p-about-welcome-5{
+  animation: fadeInOut 1s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+.p-about-info{
+  color: white;
+  align-self: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  animation: opacityto1 6s steps(1);
+}
+
+@keyframes opacityto1 {
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOut {
+  from{
+    opacity: 0;
+  }
+  1%{
+    opacity: 1;
+  }
+  99%{
+    opacity: 1;
+  }
+
+  to{
+    opacity: 0;
+  }
+} 
+
+
+/* .p2-about-background{
+  position: absolute;
+  width: 100%;
+  height: 285px;
+  background-color: yellow;
+  margin-top: -42px;
+  z-index: -3;
+}
+
+.p2-about-detailed{
+  position: relative;
+  width: 100%;
+  height: 285px;
+  margin-top: -42px;
+  background-color: black;
+  font-family: "Roboto Slab";
+  font-style: 600;
+  font-size: 40px;
+  border: red solid 2px;
+} */
+
+.p2-about-detailed{
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 285px;
+  background-color: #D9D9D9;
+  margin-top: -42px;
+  font-family: "Roboto Slab";
+  z-index: -1;
+  border: red solid 2px;
+}
+
+.p2-title{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  font-weight: bold;
+  font-size: 29px;
+  color: #05668D;
+  border: red solid 2px;
+}
+
+.p2-detailed-text{
+  font-size: 12px;
+  font-weight: 500;
+  padding: 45px 40px 40px 25px;
+  border: 2px solid green;
+}
